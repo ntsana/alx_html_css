@@ -1,0 +1,157 @@
+/* Global Styles */
+root{
+    --color-primary: #FF6565;
+    --color-dark: #071629; 
+    --color-white: #FFFFFF;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+
+}
+
+/*HEADER AND NAVIGATION SECTION */
+/* Default Styles (Desktop) */
+.header {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative; 
+    color: var(--color-white);
+}
+
+.container-1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 0; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-links li a:hover {
+    color: #FF6565;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 637px;
+    height: auto;
+    text-align: center;
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.h1 {
+    font-size: 32px;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+.h2 {
+    font-size: 16px;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+.button {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    width: 164px;
+    height: 44px;
+    border-radius: 82px;
+    margin: 40px auto 65px auto;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .Hero {
+        margin-top: 200px;
+        width: 90%;
+    }
+
+    .h1 {
+        font-size: 28px;
+    }
+
+    .h2 {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .Hero {
+        margin-top: 150px;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .h1 {
+        font-size: 24px;
+    }
+
+    .h2 {
+        font-size: 12px;
+    }
+
+    .button {
+        width: 140px;
+        height: 40px;
+    }
+}

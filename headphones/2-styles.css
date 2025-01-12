@@ -1,0 +1,236 @@
+/* Global Styles */
+root{
+    --color-primary: #FF6565;
+    --color-dark: #071629; 
+    --color-white: #FFFFFF;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+
+}
+
+
+/* Header Styles */
+.header{
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size:cover;
+    background-position:center;
+    min-height: 100vh;
+    position: relative; 
+    color: var(--color-white);
+}
+
+.container-1{
+    width:100%;
+    margin:0 auto;
+    padding:0 1rem;
+}
+
+.nav{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 0; 
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.nav-links li a:hover{
+    color:#FF6565
+}
+.Hero{
+    display: flex;
+    justify-content: center space-around;
+    flex-direction: column;
+    margin-top: 372px;
+    margin-left: 425px;
+    width: 637px;
+    height: 313px;
+    text-align: center;
+}
+
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.h1{
+    font-size: 32px;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+.h2{
+    font-size: 16px;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+.button{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: #FF6565;
+    width: 164px;
+    height: 44px;
+    border-radius: 82px;
+    margin-left: 250px;
+    margin: 40px auto 65px auto;
+}
+
+
+
+/* What Do We Do Section */
+.WhatDoWeDo {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333333;
+    min-height: 100vh;
+}
+
+/* Main Heading Section */
+.WhatDoWeDo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.WhatDoWeDo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937; /* Dark navy for contrast */
+    margin-bottom: 15px;
+}
+
+.WhatDoWeDo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555555;
+}
+
+/* Icon Section */
+.Icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.Icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.Icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.Icon h1 {
+    font-size: 1rem;
+    color: #e63946; /* Soft red for emphasis */
+    margin-bottom: 10px;
+}
+
+.Icon p {
+    font-size: 0.9rem;
+    color: #555555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Our Results Section */
+.results {
+    background: url(images/headphones_hero_2.jpg) no-repeat center center/cover;
+    text-align: center;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    color: var(--color-white)
+}
+
+.results-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 627px;
+    height: 184px;
+    text-align: center;
+    margin-left: 382px;
+    margin-top: 181px;
+}
+
+.results-text h1{
+    font-size: 32px;
+    font-style: bold;
+}
+
+resutls-text p{
+    font-size: 16px;
+}
+
+.results-items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 76px;
+    width: 988px;
+    height: 190px;
+    margin-left: 207px;
+    margin-top:56px;
+}
+
+.result-item {
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+
+.result-item img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
