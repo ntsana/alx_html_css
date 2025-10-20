@@ -41,3 +41,16 @@ article {
 aside {
   background: #eaeaea;
 }
+
+article table {
+    border-collapse: collapse;
+    width: 100%;
+}
+article th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+article th {
+    background-color: #4b0082;
+    color: white;
+}
